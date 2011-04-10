@@ -1,0 +1,148 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Getting Started with jQuery Mobile</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=990">
+		
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+		
+		<div id="main">
+			
+			<section>
+				<h1>Getting Started with jQuery Mobile</h1>
+				<h3 class="inverted">(where we quickly build something cool.)</h3>
+        <h3>@wookiehangover</h3>
+			</section>
+			
+			<section id="the-basics">
+        <h2>The Basics</h2>
+        <p>This ain't no ordinary framework.</p>
+        <p>jQuery Mobile !== jQuery</p>
+        <p>Creates a single page experience with native-feeling elements</p>
+        <p>Actively interacts with the DOM</p>
+        <p>Exposes helpers for common mobile-only events</p>
+        <p>You should test this on a phone! or at least in the iOS simulator</p>
+			</section>
+			
+			<section id="getting-started">
+				<section>
+					<h2>Let's Start</h2>
+					<p>Step One: <a href="http://jquerymobile.com/download/">Download the code</a></p>
+          <p>Make sure you're always on the most current version <br/>(alpha4.1 at the time of writing)</p>
+          <p><a href="http://jquerymobile.com/demos/1.0a4.1/">RTFM</a> - this guide is meant to be a quick companion to the official documentation. If you don't read the official docs you have no excuse when you get frustrated.</p>
+          <p>HTML5 Mobile Boilderplate is great set of defaults for mobile web development, but you may not need all of it.<br/> <a href="https://github.com/shichuan/mobile-html5-boilerplate">https://github.com/shichuan/mobile-html5-boilerplate</a></p>
+          <p class='hand'>☟</p><p>(arrow down)</p>
+				</section>
+				<section>
+					<h3>Step 2</h3>
+          <p>Create your first file.</p>
+          <script src="https://gist.github.com/912100.js"> </script>
+          <p>looks like</p>
+          <p class='hand'>☟</p>
+				</section>
+        <section>
+          <img src="assets/images/example.png" />
+        </section>
+				<section>
+					<h3>A few things to note:</h3>
+          <p>Completely usable without your own JavaScript</p>
+          <p>The URL bar is only hidden if the page's content is longer than the device height. This is new behavior as of alpha 4, and in my opinion its a regression.</p>
+          <p>Uses HTML5 data attributes to semantically seperate markup</p>
+          <p>Each "page" should have: <br/><b>header</b> (data-role="header") <br/><b>content</b> area (data-role="header") <br/>and <b>footer</b> (data-role="") </p>
+				</section>
+				<!--<section>-->
+					<!--<h3>Step 3: Grab a device</h3>-->
+          <!--<p>Open that file in a phone or browser</p>-->
+          <!--<p>OS X &amp; Linux users can just run `python -m SimpleHTTPServer` in their project directory, or just drag the file into your favoritie browser</p>-->
+          <!--<p>To view it on a mobile device, either run the command above or otherwise get that file onto a server, and browse to your local IP address (w/ port number) e.g., 192.168.1.100:8000. Make sure your device and computer are on the same WIFI network to do this.</p>-->
+        <!--</section>-->
+			</section>
+				
+			<section id="lists">
+        <section>
+          <h2>Markup Conventions: Lists</h2>
+          <p>List styles are automactically applied to any &lt;ul&gt; or &lt;ol&gt; with <code>data-role="listview"</code>
+          <p>Lists have <a href="http://jquerymobile.com/demos/1.0a4.1/#docs/lists/docs-lists.html">lots of built in styling options</a></p>
+          <p>Nested lists will automagically use multi-page transitions -- but watch out. Large nested lists have a serious performance impact.<p>
+          <p>Image and icon support is built right in, just add an image into your list.</p>
+          <p class='hand'>☟</p><p>(see an example)</p>
+        </section>
+        <section>
+          <script src="https://gist.github.com/912583.js"> </script>
+          <p>looks like</p>
+          <p class='hand'>☟</p>
+        </section>
+        <section>
+        <img src="assets/images/list-1.png" />
+        <img src="assets/images/list-2.png" />
+        </section>
+			</section>
+			
+			<section id="buttons-and-links">
+				<h2>Markup Conventions: Buttons, Links and all those Icons</h2>
+			</section>
+			
+
+			<section id="forms">
+				<h2>Markup Conventions: Forms</h2>
+      </section>
+
+      <section id="grids">
+        <h2>Grids (and how to extend them)</h2>
+        <p>Understanding fluid layouts</p>
+			</section>
+			
+      <section id="device-orientation">
+        <h2>Styling for Portrait &amp; Landscape</h2>
+        <section>
+          <p>Understanding the viewport<p>
+        </section>
+			</section>
+			
+			<section id="ajax-page-structure">
+				<h3>The easiest AJAX linking you've ever seen</h3>
+        <p>Capitalize on it by doing nothing!</p>
+			</section>
+
+			<section id="single-page-sites">
+				<h2>Single Page Sites &amp; Hard Refreshes</h2>
+			</section>
+
+      <section id="adding-your-own-scripts">
+        <h3>Interacting with jQuery Mobile Pages in a non-pain-in-the-ass way</h3>
+      </section>
+
+      <section id="going-native">
+        <h2>Going Native</h2>
+        <p>Understand the devices you're targetting</p>
+        <p>phonegap, et al</p>
+        <p>iOS save to homescreen</p>
+			</section>
+			
+			<section id="templates-and-caching">
+        <h2>Extra Credit:<br/>Templating &amp; Caching, oh my!</h2>
+			</section>
+			
+		</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+    <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.2.min.js'>\x3C/script>")</script>
+    <script src="js/jquery.ba-bbq.js"></script>
+		<script src="js/slideshow.js"></script>
+				
+	</body>
+</html>

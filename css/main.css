@@ -1,0 +1,211 @@
+/**
+ * @author Hakim El Hattab
+ *
+ * @additional by wookiehangover
+ */
+
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+  
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: 'Terminal Dosis Light', Times, 'Times New Roman', serif;*/
+	font-size: 36px;
+	
+	background: #fff;
+	color: #222;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-image: -webkit-gradient(
+		radial, 
+		50% 50%, 0, 
+		50% 50%, 1000, 
+		from(rgba(245,245,245,1.0)), 
+		to(rgba(100,100,100,1.0))
+	);
+
+	background-image: -moz-radial-gradient(
+		50% 50% 90deg,
+		rgba(245,245,245,1.0) 0%, 
+		rgba(100,100,100,1.0) 100%
+	);
+	
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+h1, h2, h3, h4 {
+	margin: 0 0 20px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 0.9em;
+  /*letter-spacing: 0.02em;*/
+  /*text-transform: uppercase;*/
+	color: #222;
+	text-shadow: 0px 0px 2px #fff, 0px 0px 4px #bbb;
+}
+
+h1 { font-size: 136px; text-transform:uppercase;	}
+h2 { font-size: 76px; }
+h3 { font-size: 56px;	}
+h4 { font-size: 36px;	}
+
+h1.inverted,
+h2.inverted,
+h3.inverted,
+h4.inverted {
+	color: #fff;
+	text-shadow: 1px 1px 3px #444;
+}
+
+
+/*********************************************
+ * SLIDES
+ *********************************************/
+#main {
+	position: absolute;
+  display:none;
+	width: 960px;
+	height: 500px;
+  float:left;
+	
+	left: 50%;
+	top: 10%;
+	margin-left: -480px;
+	/*margin-top: -260px;*/
+	
+	text-align: center;
+	
+	-webkit-perspective: 600px;
+ 	-webkit-perspective-origin: 50% 25%;
+}
+b {font-weight:bold;}
+#main section p { padding-bottom:1em;}
+#main section .hand { font-size:3em; padding-bottom:.2em;}
+
+
+#main .gist { font-size:13px; text-align:left; line-height:1; text-shadow: none; }
+
+code {}
+
+#main>section,
+#main>section>section {
+	display: none;
+	
+	position: absolute;
+	width: 100%;
+  float:left;
+	min-height: 600px;
+	
+	-webkit-transform-style: preserve-3d;
+	
+	-webkit-transition: all 600ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	   -moz-transition: all 600ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	     -o-transition: all 600ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	        transition: all 600ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+
+#main section.past {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(-100%, 0, 0) 
+						rotateY(-90deg) 
+						translate3d(-100%, 0, 0);
+}
+
+#main section.current {
+	display: block;
+}
+
+#main section.future {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(100%, 0, 0) 
+						rotateY(90deg) 
+						translate3d(100%, 0, 0);
+}
+
+#main section>section.past {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(0, -50%, 0) 
+						rotateX(70deg) 
+						translate3d(0, -50%, 0);
+}
+#main section>section.future {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(0, 50%, 0) 
+						rotateX(-70deg) 
+						translate3d(0, 50%, 0);
+}
+
+
+/*********************************************
+ * DEFAULT ELEMENT STYLES
+ *********************************************/
+
+#main>section {
+	line-height: 1.2em;
+	text-shadow: 0px 0px 2px #fff, 0px 0px 4px #bbb;
+	font-weight: 600;
+}
+
+ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+li, p {
+	margin-bottom: 10px;
+  font-weight:normal;
+}
+
+a {
+	color: #1b6263;
+	text-decoration: none;
+	border-bottom: 1px dashed rgba(0,0,0,0.3);
+	padding: 1px 3px;
+}
+	
+	a:hover {
+		color: #fff;
+		background: #2fa794;
+		text-shadow: none;
+		border: none;
+	}
+
+img {
+	margin: 30px 0 0 0;
+	/*background: rgba(255,255,255,0.12);*/
+	/*border: 4px solid #eee;*/
+	
+	/*-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+		 /*-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+					/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+}
+
+
+
+
+
+
+
+
+
